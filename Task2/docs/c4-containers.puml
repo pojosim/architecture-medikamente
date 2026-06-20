@@ -1,0 +1,86 @@
+@startuml
+!include <C4/C4_Container.puml>
+
+Person(patient, "Пациент", "Пользователь портала или мобильного приложения")
+Person(admin, "Сотрудник ресепшена", "Регистрация пациентов, запись к специалистам")
+Person(buh, "Бухгалтер", "Процессинг Платежей")
+Person(cassier, "Кассир", "Обработка платежей от пациентов")
+Person(warehouse_keeper, "Сотрудник склада", "Учет ТМЦ")
+Person(medic, "Медицинский специалист", "Врач, медсестра")
+Person(analyst, "Аналитик", "Строит отчеты и модели")
+
+System_Boundary(medikamente, "Компания Медикаменте") {
+    Container(api_gw, "API Gateway", "Kong / NGINX", "Аутентификация, маршрутизация, rate limiting")
+    Container(iam, "IAM", "Keycloak", "Управление пользователями, ролями, 2FA, MFA")
+    Container(policy_engine, "Policy Engine", "OPA", "PDP для RBAC/ABAC на основе тегов")
+
+    Container(portal, "Портал клиентов", "Spring Boot", "Личный кабинет, запись к врачу")
+    Container(crm, "CRM для сотрудников", "Spring Boot", "Управление клиентами, записью, медицинскими картами")
+    Container(mobile, "Мобильное приложение", "React Native", "Запись, просмотр анализов, уведомления")
+    Container(payment, "Платежный шлюз", "Spring Boot", "Обработка платежей, интеграция с ККМ и 1С")
+    Container(kkm, "KKM", "Software system", "Контрольно кассовая машина")
+
+    Container(classification, "Data Classification", "Python + ML", "Обнаружение PII и тегирование данных")
+    Container(metadata, "Metadata / Tagging", "Neo4j", "Хранилище тегов, политик, lineage")
+    Container(kms, "KMS", "HashiCorp Vault", "Управление ключами шифрования")
+    Container(audit, "Audit / SIEM", "ELK + OpenTelemetry", "Сбор логов, аудит доступа, алертинг")
+    Container(dlp, "DLP", "InfoWatch / Solar Dozor", "Предотвращение утечек конфиденциальной информации")
+
+    Container(data_lake, "Data Lake", "MinIO / S3", "Объектное хранилище с шифрованием и тегами")
+    Container(data_warehouse, "Data Warehouse / Lakehouse", "Apache Iceberg + Trino", "Аналитическое хранилище с маскированием")
+    Container(anonymization, "Anonymization Engine", "Apache Spark", "Обезличивание данных для аналитики")
+    Container(bi, "BI и ML платформа", "Superset + Jupyter", "Визуализация, обучение моделей")
+
+    Container(lab, "Лаборатория", "Осуществляет диагностически мероприятия")
+
+    Container(1c_buh, "1С:Бухгалтерия", "1С:Бухгалтерия", "Учет платежей")
+    Container(1c_torg, "1С:Торговля и склад", "1С:Торговля и склад ", "Учет ТМЦ")
+}
+
+Rel(patient, api_gw, "Регистрация, запись, просмотр данных (портал, мобильный клиент)", "HTTPS")
+Rel(patient, admin, "Регистрация и запись по телефону")
+Rel(patient, cassier, "Оплата за медицинские услуги")
+Rel(buh, api_gw, "Работа в 1С, процессинг платежей", "HTTPS")
+Rel(warehouse_keeper, api_gw, "Работа в 1С:Торговля и склад, учет ТМЦ", "HTTPS")
+
+Rel(cassier, kkm, "Принятие оплаты")
+Rel(kkm, payment, "Информация о принятии денежных средств")
+
+Rel(admin, api_gw, "Работа с клиентами, отчеты", "HTTPS")
+Rel(medic, api_gw, "Ведение медкарт, просмотр анализов", "HTTPS")
+Rel(analyst, bi, "Построение отчетов и моделей", "HTTPS")
+Rel(lab, api_gw, "Передача результатов анализов", "HTTPS")
+
+Rel(api_gw, iam, "Валидация токенов")
+Rel(api_gw, policy_engine, "Проверка прав доступа")
+Rel(api_gw, audit, "Логирование запросов")
+
+Rel(portal, api_gw, "Внутренние вызовы")
+Rel(crm, api_gw, "Внутренние вызовы")
+Rel(payment, api_gw, "Внутренние вызовы")
+Rel(mobile, api_gw, "Внутренние вызовы")
+
+Rel(portal, data_lake, "Чтение/запись данных")
+Rel(crm, data_lake, "Чтение/запись данных")
+Rel(payment, data_lake, "Чтение/запись данных")
+Rel(mobile, data_lake, "Чтение/запись данных")
+
+Rel(classification, metadata, "Обновление тегов")
+Rel(classification, data_lake, "Применение тегов к объектам")
+Rel(policy_engine, metadata, "Получение политик доступа")
+Rel(audit, metadata, "Запись lineage и событий")
+Rel(dlp, audit, "Логирование событий безопасности")
+
+Rel(data_lake, anonymization, "Подача сырых данных для обезличивания")
+Rel(anonymization, data_warehouse, "Запись обезличенных данных")
+Rel(data_warehouse, bi, "Предоставление данных для аналитики")
+Rel(bi, policy_engine, "Проверка прав доступа к витринам")
+Rel(bi, audit, "Логирование аналитических запросов")
+
+Rel(api_gw, 1c_buh, "Интеграция")
+Rel(api_gw, 1c_torg, "Интеграция")
+
+Rel(kms, data_lake, "Управление ключами шифрования")
+Rel(kms, data_warehouse, "Управление ключами")
+
+@enduml
