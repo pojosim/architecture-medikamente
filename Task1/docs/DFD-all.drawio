@@ -1,0 +1,130 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.0 Chrome/140.0.7339.249 Electron/38.7.2 Safari/537.36" version="29.3.0">
+  <diagram name="Страница-1" id="TEHKeuJ2GruIjTMyQHeL">
+    <mxGraphModel dx="1028" dy="755" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="LFyx2H05akGtLktA_B2Z-3" edge="1" parent="1" source="LFyx2H05akGtLktA_B2Z-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="LFyx2H05akGtLktA_B2Z-2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LFyx2H05akGtLktA_B2Z-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Пациент" vertex="1">
+          <mxGeometry height="60" width="120" x="70" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="LFyx2H05akGtLktA_B2Z-9" edge="1" parent="1" source="LFyx2H05akGtLktA_B2Z-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="LFyx2H05akGtLktA_B2Z-8" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LFyx2H05akGtLktA_B2Z-13" edge="1" parent="1" source="LFyx2H05akGtLktA_B2Z-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="LFyx2H05akGtLktA_B2Z-12" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LFyx2H05akGtLktA_B2Z-2" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="Обработка заявки на запись&amp;nbsp;&lt;div&gt;(ресепшен)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="230" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="LFyx2H05akGtLktA_B2Z-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;b&gt;Данные:&lt;/b&gt;&lt;br&gt;- ФИО&lt;div&gt;- дата рождения&lt;br&gt;- телефон&lt;br&gt;- электронная почта&lt;br&gt;- адрес прописки&lt;br&gt;- место работы, учебы&lt;br&gt;- хронические заболевания&lt;br&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="200" x="70" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="LFyx2H05akGtLktA_B2Z-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;b&gt;Операции:&lt;/b&gt;&lt;br&gt;- Запись персональных данных пациента&lt;br&gt;- Заполнение Согласия на обработку ПДн" vertex="1">
+          <mxGeometry height="50" width="220" x="250" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="LFyx2H05akGtLktA_B2Z-8" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="Журнал записей пациентов на общем диске (Excel)" vertex="1">
+          <mxGeometry height="60" width="120" x="580" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="LFyx2H05akGtLktA_B2Z-14" edge="1" parent="1" source="LFyx2H05akGtLktA_B2Z-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="LFyx2H05akGtLktA_B2Z-12" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="280" as="sourcePoint" />
+            <mxPoint x="340" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LFyx2H05akGtLktA_B2Z-12" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="Внесение записей в журнал&lt;br&gt;(ресепшн)" vertex="1">
+          <mxGeometry height="60" width="120" x="390" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="LFyx2H05akGtLktA_B2Z-20" edge="1" parent="1" source="LFyx2H05akGtLktA_B2Z-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="LFyx2H05akGtLktA_B2Z-19" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LFyx2H05akGtLktA_B2Z-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Пациент" vertex="1">
+          <mxGeometry height="60" width="120" x="70" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="LFyx2H05akGtLktA_B2Z-22" edge="1" parent="1" source="LFyx2H05akGtLktA_B2Z-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="LFyx2H05akGtLktA_B2Z-21" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LFyx2H05akGtLktA_B2Z-19" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="Сбор анамнеза и жалоб, назначение диагностики&amp;nbsp;&lt;br&gt;(врач)" vertex="1">
+          <mxGeometry height="60" width="120" x="230" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="LFyx2H05akGtLktA_B2Z-24" edge="1" parent="1" source="LFyx2H05akGtLktA_B2Z-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="LFyx2H05akGtLktA_B2Z-23" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LFyx2H05akGtLktA_B2Z-21" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="Внесение данных в медицинскую карту&lt;br&gt;(врач)" vertex="1">
+          <mxGeometry height="60" width="120" x="400" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="LFyx2H05akGtLktA_B2Z-23" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="Медицинские карты пациентов на общем диске&lt;br&gt;(Excel)" vertex="1">
+          <mxGeometry height="60" width="120" x="570" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="LFyx2H05akGtLktA_B2Z-25" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;b&gt;Операции:&lt;/b&gt;&lt;br&gt;- Обработка и запись специальных категорий данных пациента (состояние о здоровье)&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="220" x="290" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="LFyx2H05akGtLktA_B2Z-26" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;b&gt;Данные:&lt;/b&gt;&lt;br&gt;- анамнез&lt;br&gt;- данные о состоянии здоровья&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="200" x="80" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="LFyx2H05akGtLktA_B2Z-31" edge="1" parent="1" source="LFyx2H05akGtLktA_B2Z-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="LFyx2H05akGtLktA_B2Z-30" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LFyx2H05akGtLktA_B2Z-29" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Медицинская лаборатория" vertex="1">
+          <mxGeometry height="60" width="120" x="70" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="LFyx2H05akGtLktA_B2Z-34" edge="1" parent="1" source="LFyx2H05akGtLktA_B2Z-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="LFyx2H05akGtLktA_B2Z-33" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LFyx2H05akGtLktA_B2Z-30" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="Сохранение результатов&amp;nbsp; &amp;nbsp;диагностики\анализов&lt;br&gt;(мед. сотрудник)" vertex="1">
+          <mxGeometry height="60" width="130" x="230" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="LFyx2H05akGtLktA_B2Z-33" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="Реестр анализов на общем диске&lt;br&gt;(JPG, PDF)" vertex="1">
+          <mxGeometry height="60" width="120" x="414" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="LFyx2H05akGtLktA_B2Z-36" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;b&gt;Операции:&lt;/b&gt;&lt;br&gt;- Обработка и запись специальных категорий данных пациента (состояние о здоровье)&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="220" x="290" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="LFyx2H05akGtLktA_B2Z-37" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;b&gt;Данные:&lt;/b&gt;&lt;br&gt;- результаты анализов" vertex="1">
+          <mxGeometry height="70" width="200" x="70" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="LFyx2H05akGtLktA_B2Z-40" edge="1" parent="1" source="LFyx2H05akGtLktA_B2Z-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="LFyx2H05akGtLktA_B2Z-39" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LFyx2H05akGtLktA_B2Z-38" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Пациент" vertex="1">
+          <mxGeometry height="60" width="120" x="70" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="LFyx2H05akGtLktA_B2Z-42" edge="1" parent="1" source="LFyx2H05akGtLktA_B2Z-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="LFyx2H05akGtLktA_B2Z-41" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LFyx2H05akGtLktA_B2Z-39" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="Прием платежа&lt;br&gt;(кассир)" vertex="1">
+          <mxGeometry height="60" width="120" x="230" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="LFyx2H05akGtLktA_B2Z-44" edge="1" parent="1" source="LFyx2H05akGtLktA_B2Z-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="LFyx2H05akGtLktA_B2Z-43" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LFyx2H05akGtLktA_B2Z-46" edge="1" parent="1" source="LFyx2H05akGtLktA_B2Z-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="LFyx2H05akGtLktA_B2Z-45" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LFyx2H05akGtLktA_B2Z-41" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="Внесение данных об оплате в Excel&lt;br&gt;(кассир)" vertex="1">
+          <mxGeometry height="60" width="120" x="390" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="LFyx2H05akGtLktA_B2Z-43" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="Журнал записей пациентов на общем диске (Excel)" vertex="1">
+          <mxGeometry height="60" width="120" x="390" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="LFyx2H05akGtLktA_B2Z-48" edge="1" parent="1" source="LFyx2H05akGtLktA_B2Z-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="LFyx2H05akGtLktA_B2Z-47" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LFyx2H05akGtLktA_B2Z-45" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="Внесение данных об оплате в 1C&lt;br&gt;(кассир)" vertex="1">
+          <mxGeometry height="60" width="120" x="550" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="LFyx2H05akGtLktA_B2Z-47" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="1С Бухгалтерия (файловой режим)" vertex="1">
+          <mxGeometry height="60" width="120" x="550" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="LFyx2H05akGtLktA_B2Z-49" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;b&gt;Данные:&lt;/b&gt;&lt;br&gt;- платежные данные" vertex="1">
+          <mxGeometry height="70" width="200" x="70" y="810" as="geometry" />
+        </mxCell>
+        <mxCell id="LFyx2H05akGtLktA_B2Z-50" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;b&gt;Операции:&lt;/b&gt;&lt;br&gt;- Обработка и запись иных категорий данных&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="220" x="280" y="840" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
